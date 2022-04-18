@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>jQuery UI Droppable - Default functionality</title>
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>draggable</h1>
+      <div class="drag-drop">
+        <div id="draggable" class="ui-widget-content">
+          <p>Drag me to my target</p>
+        </div>
+
+        <div id="droppable" class="ui-widget-header">
+          <p>Drop here</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container sort">
+      <h1>sortable</h1>
+      <ul id="sortable">
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 1
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 2
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 3
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 4
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 5
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 6
+        </li>
+        <li class="ui-state-default">
+          <span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Item 7
+        </li>
+      </ul>
+    </div>
+
+    <h1>accordion</h1>
+    <div id="accordion">
+      <h3>Section 1</h3>
+      <div>
+        <p>
+          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam.
+          Integer ut neque. Vivamus nisi metus, molestie vel, gravida in,
+          condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi.
+          Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu
+          ante scelerisque vulputate.
+        </p>
+      </div>
+      <h3>Section 2</h3>
+      <div>
+        <p>
+          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis
+          porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non
+          quam. In suscipit faucibus urna.
+        </p>
+      </div>
+      <h3>Section 3</h3>
+      <div>
+        <p>
+          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque
+          lobortis. Phasellus pellentesque purus in massa. Aenean in pede.
+          Phasellus ac libero ac tellus pellentesque semper. Sed ac felis. Sed
+          commodo, magna quis lacinia ornare, quam ante aliquam nisi, eu iaculis
+          leo purus venenatis dui.
+        </p>
+        <ul>
+          <li>List item one</li>
+          <li>List item two</li>
+          <li>List item three</li>
+        </ul>
+      </div>
+      <h3>Section 4</h3>
+      <div>
+        <p>
+          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia Curae; Aenean lacinia
+          mauris vel est.
+        </p>
+        <p>
+          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat
+          lectus. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos.
+        </p>
+      </div>
+    </div>
+
+    <!--Auto ceomplete-->
+
+    <div class="container ui-widget">
+      <h1>Auto Complete</h1>
+      <form action="#">
+        <div class="mb-3">
+          <label for="" class="form-label">Course Name</label>
+          <input type="text" class="form-control" id="data" />
+        </div>
+        <div class="mb-3">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+
+      <!--Date Picker-->
+
+      <h1>Date Picker</h1>
+      <p>Date: <input type="text" id="datepicker" /></p>
+
+      <!--Menu-->
+      <h1>Menu</h1>
+
+      <ul id="menu">
+        <li><div>Books</div></li>
+        <li><div>Clothing</div></li>
+        <li>
+          <div>Electronics</div>
+          <ul>
+            <li><strong>Home Entertainment</strong></li>
+            <li><div>Car Hifi</div></li>
+            <li><div>Utilities</div></li>
+          </ul>
+        </li>
+        <li><div>Movies</div></li>
+        <li>
+          <div>Music</div>
+          <ul>
+            <li>
+              <div>Rock</div>
+              <ul>
+                <li><div>Alternative</div></li>
+                <li><div>Classic</div></li>
+              </ul>
+            </li>
+            <li>
+              <div>Jazz</div>
+              <ul>
+                <li><div>Freejazz</div></li>
+                <li><div>Big Band</div></li>
+                <li><div>Modern</div></li>
+              </ul>
+            </li>
+            <li><div>Pop</div></li>
+          </ul>
+        </li>
+      </ul>
+
+      <h1>Tabs</h1>
+
+      <!--Tabs-->
+      <div id="tabs">
+        <ul>
+          <li><a href="#tabs-1">Tab one</a></li>
+          <li><a href="#tabs-2">Tab two</a></li>
+          <li><a href="#tabs-3">Tab three</a></li>
+        </ul>
+
+        <div id="tabs-1">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis
+            repellat, sapiente explicabo architecto quae suscipit eligendi
+            voluptatum omnis laboriosam aut, incidunt ad exercitationem
+            blanditiis? Voluptate autem optio dolorem dignissimos! Eum rem
+            suscipit inventore consequatur, dicta corrupti minus enim ducimus
+            expedita mollitia in maiores nihil maxime? Praesentium dolorum ea
+            rerum corporis.
+          </p>
+        </div>
+        <div id="tabs-2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            consequuntur similique, nesciunt natus ipsum molestias modi animi
+            eligendi ex, architecto velit beatae maxime reprehenderit? Rerum
+            obcaecati dolor neque architecto accusamus?
+          </p>
+        </div>
+        <div id="tabs-3">
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+            magni perspiciatis aperiam eos tempore. Mollitia explicabo,
+            perspiciatis ullam distinctio et cumque. Numquam repellendus aliquid
+            magni quibusdam minus impedit, cumque nemo!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem
+            nesciunt sunt commodi, mollitia sint quia, laboriosam, labore dolor
+            aspernatur nemo quaerat dolores? Veritatis voluptatem laboriosam ut
+            quos omnis et autem, nesciunt molestias culpa tempora quasi ab eius,
+            architecto hic deleniti maiores! Porro at facere officiis optio,
+            corporis tenetur illum.
+          </p>
+        </div>
+      </div>
+
+      <h1>Color Animation</h1>
+
+      <div class="toggler">
+        <div id="effect" class="ui-widget-content ui-corner-all">
+          <h3 class="ui-widget-header ui-corner-all">Animate</h3>
+          <p>
+            Etiam libero neque, luctus a, eleifend nec, semper at, lorem. Sed
+            pede. Nulla lorem metus, adipiscing ut, luctus sed, hendrerit vitae,
+            mi.
+          </p>
+        </div>
+      </div>
+
+      <button id="button" class="ui-state-default ui-corner-all">Toggle Effect</button>
+
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
